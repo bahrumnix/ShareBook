@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/login"
+tools:context=".LoginActivity">
+
+<ImageView
+    android:id="@+id/imageApp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/imageapp2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+
+<!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="260dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Masuk Akun Anda"
+        android:textColor="@color/jingga_001"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageApp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="28dp"
+        android:hint="Email"
+        android:textColorHint="@color/jingga_001"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="#E4DFDF"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/jingga_001"
+        app:placeholderTextColor="@color/jingga_001"
+        app:startIconContentDescription="email"
+        app:startIconDrawable="@drawable/ic_round_email"
+        app:startIconTint="@color/jingga_001">
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textEmailAddressLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="28dp"
+        android:hint="Password"
+        android:textColorHint="@color/jingga_001"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="#E4DFDF"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:endIconCheckable="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/jingga_001"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/jingga_001"
+        app:placeholderTextColor="@color/jingga_001"
+        app:startIconContentDescription="Password"
+        app:startIconDrawable="@drawable/password_icon"
+        app:startIconTint="@color/jingga_001">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lupa Password?"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/box_form"
+        android:clickable="true"
+        android:drawableEnd="@drawable/arrow_signin"
+        android:fontFamily="@font/airbnb_medium"
+        android:paddingStart="25dp"
+        android:paddingTop="21dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="21dp"
+        android:text="SIGN IN"
+        android:textSize="16dp"></Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginStart="28dp"
+            android:text="Belum Memiliki Akun?"
+            android:textColorLink="@color/jingga_001"
+            android:linksClickable="true"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_to_register"
+            android:backgroundTint="@color/black"
+            android:text="  Sign Up"
+            android:textColor="@color/jingga_001"
+            android:textStyle="bold">
+        </TextView>
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_marginEnd="28dp"-->
+<!--            android:text="Sign Up"-->
+<!--            android:clickable="true"-->
+<!--            android:onClick="onClink"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:textColor="@color/jingga_001"-->
+<!--            android:textColorLink="@color/jingga_001"-->
+<!--            android:id="@+id/signuplink"-->
+<!--            >-->
+<!--        </Button>-->
+
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
