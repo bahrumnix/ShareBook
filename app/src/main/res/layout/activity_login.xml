@@ -19,8 +19,6 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     />
 
-
-<!-- TODO: Update blank fragment layout -->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -116,7 +114,7 @@ tools:context=".LoginActivity">
         android:id="@+id/forgetPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="270dp"
+        android:layout_marginStart="250dp"
         android:layout_marginEnd="28dp"
         android:fontFamily="@font/poppinsregular"
         android:text="Lupa Password?"
@@ -140,7 +138,8 @@ tools:context=".LoginActivity">
         android:paddingTop="21dp"
         android:paddingEnd="25dp"
         android:paddingBottom="21dp"
-        android:text="SIGN IN"
+        android:text="@string/signin"
+        android:textColor="@color/white"
         android:textSize="16dp"></Button>
     <LinearLayout
         android:layout_width="wrap_content"
