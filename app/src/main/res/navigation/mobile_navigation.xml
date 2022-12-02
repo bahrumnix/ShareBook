@@ -15,7 +15,11 @@
         android:id="@+id/navigation_perpusku"
         android:name="com.example.sharebook.ui.perpusku.PerpuskuFragment"
         android:label="@string/title_mylibrary"
-        tools:layout="@layout/fragment_perpusku" />
+        tools:layout="@layout/fragment_perpusku" >
+        <action
+            android:id="@+id/action_navigation_perpusku_to_formTambahFragment"
+            app:destination="@id/formTambahFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_community"
@@ -28,4 +32,9 @@
         android:name="com.example.sharebook.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/formTambahFragment"
+        android:name="com.example.sharebook.ui.perpusku.FormTambahFragment"
+        android:label="fragment_form_tambah"
+        tools:layout="@layout/fragment_form_tambah" />
 </navigation>

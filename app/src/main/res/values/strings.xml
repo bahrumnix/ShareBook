@@ -9,5 +9,7 @@
     <string name="signup">Belum Memiliki Akun? <a href="">Sign Up</a></string>
     <string name="signin">SIGN IN</string>
     <string name="signupbutton">SIGN UP</string>
-
+    <string name="inputDataBuku">Silahkan Inpun Data Buku!</string>
+    <string name="sewa">Sewa</string>
+    <string name="pinjam">Pinjam</string>
 </resources>

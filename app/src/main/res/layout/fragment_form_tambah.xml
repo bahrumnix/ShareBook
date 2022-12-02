@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formTambahFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.perpusku.FormTambahFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Silahkan Menginputkan Data Buku!"
+            android:textColor="@color/blue_001"
+            android:textSize="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BFC0C3"
+            android:layout_marginTop="10dp">
+
+        </View>
+
+        <!--Judul Buku-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Judul Buku"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/ic_book"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textJudulBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Nama Penerbit-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Penerbit"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/publisher"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPenerbitBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:singleLine="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Nama Penulis-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Penulis"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/person_vektor"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPenulisBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--hr-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#BFC0C3">
+
+        </View>
+
+        <!--Tahun Terbit-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tvTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tahun Terbit"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/ic_calendar"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textTahunTerbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Sinopsis-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinopsis"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/ic_sinopsis_20"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textSinopsisBuku"
+                android:layout_width="match_parent"
+                android:layout_height="301dp"
+                android:inputType="text"
+                android:singleLine="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Jumlah Buku Terbit-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tvJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Jumlah Buku"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/keranjang"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textJumlahBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Jenis Peminjaman-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Jenis Peminjaman"
+            android:textSize="14dp"
+            android:textColor="@color/blue_001">
+        </TextView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/pilihPinjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/blue_001"
+                android:text="@string/pinjam"
+                android:textSize="14dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/pilihSewa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/blue_001"
+                android:text="@string/sewa"
+                android:textSize="14dp">
+            </RadioButton>
+        </RadioGroup>
+
+        <!--Jumlah Buku Terbit-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tvHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Harga Buku"
+            android:textColorHint="@color/blue_001"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E4DFDF"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/blue_001"
+            app:placeholderTextColor="@color/blue_001"
+            app:startIconDrawable="@drawable/keranjang"
+            app:startIconTint="@color/blue_001">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textHargaBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Upload Gambar-->
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/inputImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_upload_image"
+                android:scaleType="centerInside">
+            </ImageView>
+        </LinearLayout>
+
+        <!--Button Input-->
+        <Button
+            android:id="@+id/btn_inputBuku"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/box_form"
+            android:clickable="true"
+            android:fontFamily="@font/poppinsbold"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="15dp"
+            android:text="INPUT"
+            android:textColor="@color/white"
+            android:textSize="20dp"></Button>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

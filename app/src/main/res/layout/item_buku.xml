@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box_item_buku">
+
+    <ImageView
+        android:id="@+id/gambarBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_upload_image"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:scaleType="centerCrop">
+    </ImageView>
+    <TextView
+        android:id="@+id/judulBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul"
+        android:textAlignment="center"
+        android:textSize="7dp"
+        android:textColor="@color/white">
+    </TextView>
+    <TextView
+        android:id="@+id/namaPenulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Penulis"
+        android:textAlignment="center"
+        android:textSize="7dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/white">
+    </TextView>
+
+</LinearLayout>
