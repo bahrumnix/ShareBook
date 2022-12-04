@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ShareBook"
+rootProject.name = "projectShareBook"
 include ':app'

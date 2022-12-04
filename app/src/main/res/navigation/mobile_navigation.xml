@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.sharebook.ui.home.HomeFragment"
+        android:name="com.example.projectShareBook.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_perpusku"
-        android:name="com.example.sharebook.ui.perpusku.PerpuskuFragment"
+        android:name="com.example.projectShareBook.ui.perpusku.PerpuskuFragment"
         android:label="@string/title_mylibrary"
         tools:layout="@layout/fragment_perpusku" >
         <action
@@ -23,18 +23,18 @@
 
     <fragment
         android:id="@+id/navigation_community"
-        android:name="com.example.sharebook.ui.community.CommunityFragment"
+        android:name="com.example.projectShareBook.ui.community.CommunityFragment"
         android:label="@string/title_community"
         tools:layout="@layout/fragment_community" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.sharebook.ProfileFragment"
+        android:name="com.example.projectShareBook.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile"/>
     <fragment
         android:id="@+id/formTambahFragment"
-        android:name="com.example.sharebook.ui.perpusku.FormTambahFragment"
+        android:name="com.example.projectShareBook.ui.perpusku.FormTambahFragment"
         android:label="fragment_form_tambah"
         tools:layout="@layout/fragment_form_tambah" />
 </navigation>

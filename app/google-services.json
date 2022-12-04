@@ -1,33 +1,70 @@
 {
   "project_info": {
-    "project_number": "451315135857",
-    "project_id": "sharebook-2c0d5",
-    "storage_bucket": "sharebook-2c0d5.appspot.com"
+    "project_number": "964153157688",
+    "project_id": "sharebook-aae1f",
+    "storage_bucket": "sharebook-aae1f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:451315135857:android:d86dad2de8d9c783c672d0",
+        "mobilesdk_app_id": "1:964153157688:android:ca40231b7ba639a6ac9ecd",
         "android_client_info": {
-          "package_name": "com.example.sharebook"
+          "package_name": "com.example.projectShareBook"
         }
       },
       "oauth_client": [
         {
-          "client_id": "451315135857-10ec7a2a0a25k27pa9ngbd4njr80bot3.apps.googleusercontent.com",
+          "client_id": "964153157688-656lsvmc5md7v1u5kea3rkkcsb4a9lpo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectShareBook",
+            "certificate_hash": "baf9a5ff8d381ac8b68fde5703edff4da30783e8"
+          }
+        },
+        {
+          "client_id": "964153157688-rn703jklj9qf47ptekq2rqbt26fvdhqf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCNtbuZ2tp5J0r7_YWTuZNeZEQ1UED8aRg"
+          "current_key": "AIzaSyAisjE0JGq3sv_xMIO3lphEapBrFO2wBaE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "451315135857-10ec7a2a0a25k27pa9ngbd4njr80bot3.apps.googleusercontent.com",
+              "client_id": "964153157688-rn703jklj9qf47ptekq2rqbt26fvdhqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964153157688:android:e3d6a5b2bb7c4ff5ac9ecd",
+        "android_client_info": {
+          "package_name": "com.example.sharebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964153157688-rn703jklj9qf47ptekq2rqbt26fvdhqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAisjE0JGq3sv_xMIO3lphEapBrFO2wBaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964153157688-rn703jklj9qf47ptekq2rqbt26fvdhqf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

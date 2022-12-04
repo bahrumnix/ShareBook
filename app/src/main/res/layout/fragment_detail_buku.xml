@@ -40,8 +40,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_upload_image"
             android:background="@drawable/box_image"
-            android:src=""
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.509"
@@ -55,7 +55,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
             android:text="Pemilik : "
-
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +84,6 @@
             android:fontFamily="@font/poppinsbold"
             android:text="Jumlah : "
             android:textColor="@color/white"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.782"
@@ -98,15 +96,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
             android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="5dp"
             android:text="1"
             android:textColor="@color/white"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintHorizontal_bias="0.950"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.978"></TextView>
+            app:layout_constraintVertical_bias="1.0"></TextView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -143,7 +144,6 @@
                 android:textSize="15dp"
                 android:textColor="@color/white"
                 android:background="@drawable/pinjam_box">
-
             </TextView>
         </LinearLayout>
         <TextView
@@ -259,7 +259,6 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18dp"></Button>
-
     </LinearLayout>
 
 </LinearLayout>

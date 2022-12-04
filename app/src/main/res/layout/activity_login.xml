@@ -185,5 +185,4 @@ tools:context=".LoginActivity">
 
     </LinearLayout>
 </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
